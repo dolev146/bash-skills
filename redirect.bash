@@ -1,4 +1,4 @@
-#! /bin
+#!/bin/bash
 
 ls -l > ls_out # Redicect stdout to file
 ls -l >> ls_out # Append the output to the same file
@@ -67,3 +67,40 @@ touch Lego "lEt's go" "I am learning Linux" "Let it go"
 ls *[Ll][Ee][!Gg]* > le
 
 # https://www.tecmint.com/use-wildcards-to-match-filenames-in-linux/
+
+HELLO = "Hello"
+echo $HELLO # Hello
+
+X=1
+Y=3
+Z=X+Y
+# let Z=X+Y # same as downrow
+$(( Z=X+Y ))
+
+X=1
+# $X==1 for strings
+if [ $X -eq 1 ]
+then
+    echo "X is 1"
+fi
+
+if [ !$X -eq 1 ]
+then
+    echo "X is 1"
+fi
+
+# mkdir mydir
+if [ -d "./mydir" ]
+then
+    echo "mydir exists"
+else
+    echo "mydir does not exist"
+fi
+
+# -e if exists a file
+
+echo "Please insert a number"
+read NUM
+echo $NUM
+
+
