@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ARR=(a b c d)
-echo ${ARR[0]} # a
-echo ${ARR[1]} # b
-echo ${ARR[2]} # c
-echo ${ARR[3]} # d
+echo $ARR[0] # a
+echo $ARR[1] # b
+echo $ARR[2] # c
+echo $ARR[3] # d
 # echo size
 echo ${#ARR[@]} # 4
 # echo entire arr

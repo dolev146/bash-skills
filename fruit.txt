@@ -1,3 +1,5 @@
 banana
 melon
 apple
+apple
+apple
